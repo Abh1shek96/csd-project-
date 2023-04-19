@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Passenger </title>
+	<link rel="stylesheet" type="text/css" href="style1.css"/>
+	<!-- <link rel="stylesheet" type="text/javascript" href="style3.js" -->
+	<script src="./style3.js"></script>
+</head>
+<body class="class-for-passsignup">
+
+<div class="main">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<div class="card">
+		<form name="registration" class="registartion-form" onsubmit="return formValidation()">
+			<h2 class="title">Sign Up (Step 1)</h2>
+			<p class="subtitle" style="color:darkgrey;">Already have a account? <a href="login.html">Log in</a></p>
+			<br/>
+			<div class="email-login">
+				<label>First name </label>
+    			<input type="text" placeholder="Enter your First Name" name="fname">
+    			<label>Last name </label>
+    			<input type="text" placeholder="Enter your Last Name" name="lname"><br>
+    			<label>Age </label>
+    			<input type="text" placeholder="Enter your Age" name="age"><br>
+			</div>
+		</form>
+		<button class="cta-btn" onclick="document.location = 'ustep2.html'">Next</button>
+		<p class="subtitle" style="color:darkgrey;">Are you a Driver? <a href="already.html">Click here</a></p>
+	</div>
+</div>
+</body>
+</html>

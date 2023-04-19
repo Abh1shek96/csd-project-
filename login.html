@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+	<script>
+		function validate() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			
+			if (username == "" || password == "") {
+				alert("Please enter both username and password.");
+				return false;
+			}
+			else {
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<div class="card">
+			<div class="center">
+				<form onsubmit="return validate()" action="process_login.php" method="post">
+					<h1 class="title">Login</h1>
+					<label for="username">Username:</label>
+					<input type="text" id="username" placeholder="Enter your username" name="username"><br><br>
+					<label for="password">Password:</label>
+					<input type="password" id="password" placeholder="Enter your password" name="password"><br><br>
+					<input type="submit" value="Submit"><br>
+					<p class="subtitle" style="color:darkgrey;">Create a New Account  <a href="user1.html">Sign Up</a></p>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
